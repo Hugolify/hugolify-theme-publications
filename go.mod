@@ -1,3 +1,3 @@
-module github.com/sebousan/hugolify-theme-publications
+module github.com/hugolify/hugolify-theme-publications
 
 go 1.19
