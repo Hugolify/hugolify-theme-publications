@@ -1,3 +1,8 @@
+concerned:
+  discover: Discover the concerned person
+  title:
+    one: Concerned person
+    other: Persons concerned
 publications:
   all: All publications
   latest: Latest publications

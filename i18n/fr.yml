@@ -1,3 +1,8 @@
+concerned:
+  discover: Découvrir la personne concernée
+  title:
+    one: Personnes concernée
+    other: Personnes concernées
 publications:
   all: Toutes les parutions
   latest: Dernières parutions
