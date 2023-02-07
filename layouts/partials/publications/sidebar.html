@@ -1,6 +1,9 @@
 <div class="sidebar">
   {{ partial "publications/press" . }}
   {{ partial "publications/description" . }}
-  {{ partial "publications/concerned" . }}
+  {{ $concerned := "publications/concerned" }}
+  {{ if templates.Exists ( printf "partials/%s" $concerned ) }}
+    {{ partial $concerned . }}
+  {{ end }}
   {{ partial "commons/share" . }}
 </div>
