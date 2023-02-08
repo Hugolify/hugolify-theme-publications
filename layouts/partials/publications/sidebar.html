@@ -1,7 +1,7 @@
 <div class="sidebar">
   {{ partial "publications/press" . }}
   {{ partial "publications/description" . }}
-  {{ $concerned := "publications/concerned" }}
+  {{ $concerned := "publications/concerned.html" }}
   {{ if templates.Exists ( printf "partials/%s" $concerned ) }}
     {{ partial $concerned . }}
   {{ end }}

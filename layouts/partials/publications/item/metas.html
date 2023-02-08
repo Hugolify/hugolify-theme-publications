@@ -1,5 +1,5 @@
 <div class="metas">
-  {{ $concerned := "publications/item/concerned" }}
+  {{ $concerned := "publications/item/concerned.html" }}
   {{ if templates.Exists ( printf "partials/%s" $concerned ) }}
     {{ partial $concerned . }}
   {{ end }}
