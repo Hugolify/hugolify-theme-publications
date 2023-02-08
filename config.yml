@@ -18,3 +18,7 @@ params:
     image:
       desktop: "746x"
       mobile: "300x"
+
+# Default
+permalinks:
+  publications: /publications/:slug/
