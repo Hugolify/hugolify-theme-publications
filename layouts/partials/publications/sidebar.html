@@ -1,4 +1,4 @@
-<div class="sidebar">
+<div class="sidebar"{{ partial "func/SetAnim" (dict "element" "sidebar") }}>
   {{ partial "publications/press" . }}
   {{ partial "publications/description" . }}
   {{ $concerned := "publications/concerned.html" }}
