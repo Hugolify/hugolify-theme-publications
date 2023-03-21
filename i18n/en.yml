@@ -1,5 +1,6 @@
 publications:
   all: All publications
+  discover: Discover publication
   latest: Latest publications
   latest_person: Latest publications by {{ .Person }}
   list: List of publications by the person concerned

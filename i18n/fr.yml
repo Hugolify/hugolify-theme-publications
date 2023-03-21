@@ -1,5 +1,6 @@
 publications:
   all: Toutes les parutions
+  discover: Découvrir la parution
   latest: Dernières parutions
   latest_person: Dernières parutions de {{ .Person }}
   list: Liste des parutions de la personne concernée
