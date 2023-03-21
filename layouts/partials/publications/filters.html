@@ -1,4 +1,4 @@
-{{ $hasConcerned := partial "func/isTaxonomyAvailable" (dict "pages" .Pages "taxonomy" "concerned") }}
+{{ $hasConcerned := partial "func/HasTaxonomyAvailable" (dict "section" "publications" "taxonomy" "statutes") }}
 {{ if $hasConcerned }}
   <div class="filters offcanvas" tabindex="-1" id="publicationsFilters" aria-labelledby="publicationsFiltersLabel">
     {{ partial "publications/filters/header" . }}
