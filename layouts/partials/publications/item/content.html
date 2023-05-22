@@ -1,5 +1,5 @@
 <a href="{{ .Permalink }}" itemprop="url" class="content">
   {{ partial "publications/item/press" . }}
-  {{ partial "commons/item/date" (dict "date" .Date "format" ":date_long") }}
+  {{ partial "publications/item/metas" . }}
   {{ partial "commons/item/title" . }}
 </a>

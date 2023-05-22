@@ -1,3 +1,7 @@
 <div class="metas">
   {{ partial "publications/date" . }}
+  {{ $publications_categories := "publications/publications_categories.html" }}
+  {{ if templates.Exists ( printf "partials/%s" $publications_categories ) }}
+    {{ partial $publications_categories . }}
+  {{ end }}
 </div>

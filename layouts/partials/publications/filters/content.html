@@ -1,4 +1,8 @@
 <div class="content">
+  {{ $publications_categories := "publications/filters/publications_categories.html" }}
+  {{ if templates.Exists ( printf "partials/%s" $publications_categories ) }}
+    {{ partial $publications_categories . }}
+  {{ end }}
   {{ $concerned := "publications/filters/concerned.html" }}
   {{ if templates.Exists ( printf "partials/%s" $concerned ) }}
     {{ partial $concerned . }}

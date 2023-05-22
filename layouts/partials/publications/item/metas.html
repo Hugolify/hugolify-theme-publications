@@ -1,6 +1,7 @@
 <div class="metas">
-  {{ $concerned := "publications/item/concerned.html" }}
-  {{ if templates.Exists ( printf "partials/%s" $concerned ) }}
-    {{ partial $concerned . }}
+  {{ partial "commons/item/date" (dict "date" .Date "format" ":date_long") }}
+  {{ $publications_categories := "publications/item/publications_categories.html" }}
+  {{ if templates.Exists ( printf "partials/%s" $publications_categories ) }}
+    {{ partial $publications_categories . }}
   {{ end }}
 </div>

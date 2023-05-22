@@ -1,4 +1,5 @@
-{{ $hasConcerned := partial "func/HasTaxonomyAvailable" (dict "section" "publications" "taxonomy" "statutes") }}
-{{ if $hasConcerned }}
+{{ $hasCategories := partial "func/HasTaxonomyAvailable" (dict "section" "publications" "taxonomy" "publication_categories") }}
+{{ $hasConcerned := partial "func/HasTaxonomyAvailable" (dict "section" "publications" "taxonomy" "concerned") }}
+{{ if or $hasCategories $hasConcerned }}
   <button class="btn-filter" type="button" data-bs-toggle="offcanvas" data-bs-target="#publicationsFilters" aria-controls="publicationsFilters">{{ i18n "filter" }}</button>
 {{ end }}
