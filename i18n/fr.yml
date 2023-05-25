@@ -3,6 +3,7 @@ publications:
   discover: Découvrir la parution
   latest: Dernières parutions
   latest_person: Dernières parutions de {{ .Person }}
+  latest_section: Dernières parutions en {{ .Section }}
   list: Liste des parutions de la personne concernée
   list_person: Liste des parutions de {{ .Person }}
   more: Découvrir plus de parutions
