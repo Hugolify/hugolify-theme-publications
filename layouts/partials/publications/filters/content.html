@@ -3,8 +3,12 @@
   {{ if templates.Exists ( printf "partials/%s" $publications_categories ) }}
     {{ partial $publications_categories . }}
   {{ end }}
-  {{ $concerned := "publications/filters/concerned.html" }}
-  {{ if templates.Exists ( printf "partials/%s" $concerned ) }}
-    {{ partial $concerned . }}
+  {{ $publications_concerned := "publications/filters/publications_concerned.html" }}
+  {{ if templates.Exists ( printf "partials/%s" $publications_concerned ) }}
+    {{ partial $publications_concerned . }}
+  {{ end }}
+  {{ $publications_expertises := "publications/filters/publications_expertises.html" }}
+  {{ if templates.Exists ( printf "partials/%s" $publications_expertises ) }}
+    {{ partial $publications_expertises . }}
   {{ end }}
 </div>
