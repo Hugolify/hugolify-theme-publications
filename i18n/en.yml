@@ -9,7 +9,7 @@ publications:
   more: Discover more publications
   more_person: Discover more publications by {{ .Person }}
   press: 
-    more: Découvrir l’article complet
+    more: Discover the full article
   title:
     one: Publication
     other: Publications
