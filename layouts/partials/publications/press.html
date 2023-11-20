@@ -7,7 +7,7 @@
     <div class="content">
       <h3 class="name">{{ .title }}</h3>
       {{ partial "publications/metas" $context }}
-      <a href="{{ .url }}" class="btn" target="_blank" rel="noopener noreferrer" title="{{ $title }}">{{ $text }}</a>
+      <a href="{{ .url | safeURL }}" class="btn" target="_blank" rel="noopener noreferrer" title="{{ $title }}">{{ $text }}</a>
     </div>
   </div>
 {{ else }}
