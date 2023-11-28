@@ -8,7 +8,7 @@ publications:
   list_person: Liste des parutions de {{ .Person }}
   more: Découvrir plus de parutions
   more_person: Découvrir plus de parutions de {{ .Person }}
-  press: 
+  press:
     more: Découvrir l’article complet
   title:
     one: Parution

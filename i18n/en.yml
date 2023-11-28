@@ -3,14 +3,14 @@ publications:
   discover: Discover publication
   latest: Latest publications
   latest_person: Latest publications by {{ .Person }}
-  latest_section: Our {{ .Section }}’s latest publications 
+  latest_section: Our {{ .Section }}’s latest publications
   list: List of publications by the person concerned
   list_person: List of {{ .Person }}’s publications
   more: Discover more publications
   more_person: Discover more publications by {{ .Person }}
-  press: 
+  press:
     more: Discover the full article
   title:
     one: Publication
     other: Publications
-  title_person: "{{ .Person }}’s publications"
+  title_person: '{{ .Person }}’s publications'
