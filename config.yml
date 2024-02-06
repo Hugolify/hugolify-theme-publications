@@ -15,6 +15,7 @@ params:
   publications:
     thumbnail:
       desktop: '306x459'
+      desktop_large: '636x1071'
       mobile: '138x207'
       scrollsnap: '240x360'
     image:
