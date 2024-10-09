@@ -1,15 +1,1 @@
-{{- $desktop := site.Params.publications.thumbnail.desktop | default false -}}
-{{- $mobile := site.Params.publications.thumbnail.mobile | default false -}}
-{{ if .Scratch.Get "large" }}
-  {{- $desktop = site.Params.publications.thumbnail.desktop_large | default $desktop -}}
-  {{- .Scratch.Delete "large" -}}
-  {{ end }}
-{{ if .Scratch.Get "scrollsnap" }}
-  {{- $mobile = site.Params.publications.thumbnail.scrollsnap | default false -}}
-  {{- .Scratch.Delete "scrollsnap" -}}
-{{ end }}
-{{ partial "commons/item/media.html" (dict
-      "context" .
-      "desktop" $desktop
-      "mobile" $mobile
-    ) }}
+{{ partial "commons/item/media.html" . }}
