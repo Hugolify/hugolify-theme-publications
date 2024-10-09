@@ -12,6 +12,9 @@ module:
       target: layouts
 
 params:
+  admin:
+    collections:
+      publications: true
   publications:
     thumbnail:
       desktop: '306x459'
