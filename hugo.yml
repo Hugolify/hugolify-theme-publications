@@ -14,7 +14,8 @@ module:
 params:
   admin:
     collections:
-      publications: true
+      publications:
+        enable: true
   publications:
     thumbnail:
       desktop: '306x459'
