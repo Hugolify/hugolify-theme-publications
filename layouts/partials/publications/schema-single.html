@@ -21,11 +21,11 @@
     {{ end }}
 
     {{ with .Params.description }}
-      "abstract": {{ . | plainify | safeHTML }},
+      "abstract": {{ partial "func/PrepareData.html" . }},
     {{ end }}
 
     {{ with .Content }}
-      "description": {{ . | plainify | safeHTML }},
+      "description": {{ partial "func/PrepareData.html" . }},
     {{ end }}
   }
 </script>
