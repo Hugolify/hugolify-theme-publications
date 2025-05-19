@@ -11,11 +11,17 @@ module:
     - source: layouts
       target: layouts
 
+# Params
 params:
   admin:
     collections:
       publications:
         enable: true
+        filter:
+          - field: isIndex
+            value: false
+        icon:
+          sveltiacms: newspaper
         summary: "{{title}} - {{date | date('YYYY-MM-DD')}}"
   publications:
     thumbnail:
@@ -28,4 +34,5 @@ params:
 
 # Default
 permalinks:
-  publications: /publications/:slug/
+  page:
+    publications: /publications/:slug/
