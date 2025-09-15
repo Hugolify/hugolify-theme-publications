@@ -5,9 +5,13 @@
 {{- with .Params.press }}
   <div class="press">
     <div class="content">
-      <h3 class="name">{{ .title }}</h3>
-      {{ partial "publications/metas" $context }}
-      <a href="{{ .url | safeURL }}" class="btn" target="_blank" rel="noopener noreferrer" title="{{ $title }}">{{ $text }}</a>
+      {{- with .title }}
+      <h3 class="name">{{ partial "func/PrepareHTML.html"  }}</h3>
+      {{ end -}}
+      {{ partial "publications/metas.html" $context }}
+      {{- with .url }}
+      <a href="{{ . | safeURL }}" class="btn" target="_blank" rel="noopener noreferrer" title="{{ $title }}">{{ $text }}</a>
+      {{ end -}}
     </div>
   </div>
 {{ else }}
