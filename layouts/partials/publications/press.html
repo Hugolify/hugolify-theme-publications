@@ -6,7 +6,7 @@
   <div class="press">
     <div class="content">
       {{- with .title }}
-      <h3 class="name">{{ partial "func/PrepareHTML.html"  }}</h3>
+      <h3 class="name">{{ partial "func/PrepareHTML.html" . }}</h3>
       {{ end -}}
       {{ partial "publications/metas.html" $context }}
       {{- with .url }}
