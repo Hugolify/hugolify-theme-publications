@@ -21,7 +21,12 @@ params:
           - field: isIndex
             value: false
         icon:
-          sveltiacms: newspaper
+          bootstrap_icons: newspaper
+          iconoir: journal
+          lucide: newspaper
+          material_icons: newspaper
+          material_symbols: newspaper
+          sveltiacms: newspaper # legacy
         summary: "{{title}} - {{date | date('YYYY-MM-DD')}}"
   publications:
     thumbnail:
