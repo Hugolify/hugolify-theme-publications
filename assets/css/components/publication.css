@@ -73,6 +73,7 @@
       .press {
         inset-block-start: 0;
         inset-inline-start: 0;
+        pointer-events: none;
         position: absolute;
       }
     }

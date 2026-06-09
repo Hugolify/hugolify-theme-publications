@@ -19,7 +19,7 @@
     --publication-gap: var(--item-gap);
     --publication-media-color-background: var(--item-media-color-background);
     --publication-media-order: var(--item-media-order);
-    --publication-media-ratio: var(--item-media-ratio);
+    --publication-media-ratio: var(--ratio-portrait);
     --publication-metas-border-end: var(--item-metas-border-end);
     --publication-metas-border-start: var(--item-metas-border-start);
     --publication-metas-color-background: var(--item-metas-color-background);

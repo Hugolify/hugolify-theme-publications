@@ -82,7 +82,7 @@
         "$type": "number"
       },
       "ratio": {
-        "$value": "{item.media.ratio}",
+        "$value": "{ratio.portrait}",
         "$type": "string"
       }
     },
