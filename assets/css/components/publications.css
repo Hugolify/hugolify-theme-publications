@@ -1,0 +1,12 @@
+/* components/publications.css */
+/*
+ * .publications remaps the full --items-* API onto its --publications-* tokens, so any
+ * value can be tuned from publications.json without touching this file.
+ * Usage: <article class="items publications">
+ */
+@layer components {
+  .publications {
+    --items-min-width: var(--publications-min-width);
+    --items-nav-margin-block-start: var(--publications-nav-margin-block-start);
+  }
+}

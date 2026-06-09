@@ -1,0 +1,9 @@
+/* Do not edit directly, this file was auto-generated. */
+
+/* publications.css */
+@layer tokens {
+  :root {
+    --publications-min-width: var(--items-min-width);
+    --publications-nav-margin-block-start: var(--items-nav-margin-block-start);
+  }
+}

@@ -1,0 +1,46 @@
+/* Do not edit directly, this file was auto-generated. */
+
+/* publication.css */
+@layer tokens {
+  :root {
+    --publication-border-radius: var(--item-border-radius);
+    --publication-border-style: var(--item-border-style);
+    --publication-border-width: var(--item-border-width);
+    --publication-btn-border-width: var(--item-btn-border-width);
+    --publication-btn-color-background: var(--item-btn-color-background);
+    --publication-btn-color-text: var(--item-btn-color-text);
+    --publication-btn-padding: var(--item-btn-padding);
+    --publication-btn-text-decoration: var(--item-btn-text-decoration);
+    --publication-btn-text-decoration-hover: var(--item-btn-text-decoration-hover);
+    --publication-color-background: var(--item-color-background);
+    --publication-color-border: var(--item-color-border);
+    --publication-color-text: var(--item-color-text);
+    --publication-color-text-muted: var(--item-color-text-muted);
+    --publication-gap: var(--item-gap);
+    --publication-media-color-background: var(--item-media-color-background);
+    --publication-media-order: var(--item-media-order);
+    --publication-media-ratio: var(--item-media-ratio);
+    --publication-metas-border-end: var(--item-metas-border-end);
+    --publication-metas-border-start: var(--item-metas-border-start);
+    --publication-metas-color-background: var(--item-metas-color-background);
+    --publication-metas-font-size: var(--item-metas-font-size);
+    --publication-metas-order: var(--item-metas-order);
+    --publication-metas-padding-inline: var(--item-metas-padding-inline);
+    --publication-metas-padding-block-start: var(--item-metas-padding-block-start);
+    --publication-metas-padding-block-end: var(--item-metas-padding-block-end);
+    --publication-order: var(--item-order);
+    --publication-padding-inline: var(--item-padding-inline);
+    --publication-padding-block: var(--item-padding-block);
+    --publication-press-order: -1;
+    --publication-press-padding-inline: var(--spacing-card);
+    --publication-press-padding-block-start: var(--spacing-card);
+    --publication-press-padding-block-end: 0;
+    --publication-shadow: var(--item-shadow);
+    --publication-shadow-hover: var(--item-shadow-hover);
+    --publication-title-color: var(--item-title-color);
+    --publication-title-font-size: var(--item-title-font-size);
+    --publication-title-font-weight: var(--item-title-font-weight);
+    --publication-title-line-height: var(--item-title-line-height);
+    --publication-transition: var(--item-transition);
+  }
+}

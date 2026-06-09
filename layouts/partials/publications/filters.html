@@ -1,12 +1,6 @@
-{{ $hasCategories := partial "func/HasTaxonomyAvailable" (dict "section" "publications" "taxonomy" "publications_categories") }}
-{{ $hasPersons := partial "func/HasTaxonomyAvailable" (dict "section" "publications" "taxonomy" "publications_persons") }}
-<!-- LEGACY -->
-{{ $hasConcerned := partial "func/HasTaxonomyAvailable" (dict "section" "publications" "taxonomy" "publications_concerned") }}
-<!-- / LEGACY -->
-{{ $hasExpertises := partial "func/HasTaxonomyAvailable" (dict "section" "publications" "taxonomy" "publications_expertises") }}
-{{ if or $hasCategories $hasPersons $hasConcerned $hasExpertises }}
-  <div class="filters offcanvas" tabindex="-1" id="publicationsFilters" aria-labelledby="publicationsFiltersLabel">
-    {{ partial "publications/filters/header" . }}
-    {{ partial "publications/filters/content" . }}
-  </div>
-{{ end }}
+{{- $hasCategories := partial "func/HasTaxonomyAvailable" (dict "section" "publications" "taxonomy" "publications_categories") -}}
+{{- $hasPersons := partial "func/HasTaxonomyAvailable" (dict "section" "publications" "taxonomy" "publications_persons") -}}
+{{- $hasExpertises := partial "func/HasTaxonomyAvailable" (dict "section" "publications" "taxonomy" "publications_expertises") -}}
+{{- if or $hasCategories $hasPersons $hasExpertises }}
+  {{ partial "commons/filters.html" (dict "context" . "section" "publications") }}
+{{- end }}
