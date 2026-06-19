@@ -7,66 +7,13 @@
  */
 @layer components {
   .publication {
-    /* Box */
-    --item-color-background: var(--publication-color-background);
-    --item-color-border: var(--publication-color-border);
-    --item-color-text: var(--publication-color-text);
-    --item-color-text-muted: var(--publication-color-text-muted);
-    --item-border-radius: var(--publication-border-radius);
-    --item-border-style: var(--publication-border-style);
-    --item-border-width: var(--publication-border-width);
-    --item-shadow: var(--publication-shadow);
-    --item-shadow-hover: var(--publication-shadow-hover);
-    --item-transition: var(--publication-transition);
-
-    /* Content */
-    --item-gap: var(--publication-gap);
-    --item-order: var(--publication-order);
-    --item-padding-block: var(--publication-padding-block);
-    --item-padding-inline: var(--publication-padding-inline);
-
-    /* Title */
-    --item-title-color: var(--publication-title-color);
-    --item-title-font-size: var(--publication-title-font-size);
-    --item-title-font-weight: var(--publication-title-font-weight);
-    --item-title-line-height: var(--publication-title-line-height);
-
-    /* Metas */
-    --item-metas-border-end: var(--publication-metas-border-end);
-    --item-metas-border-start: var(--publication-metas-border-start);
-    --item-metas-color-background: var(--publication-metas-color-background);
-    --item-metas-font-size: var(--publication-metas-font-size);
-    --item-metas-order: var(--publication-metas-order);
-    --item-metas-padding-block-end: var(--publication-metas-padding-block-end);
-    --item-metas-padding-block-start: var(--publication-metas-padding-block-start);
-    --item-metas-padding-inline: var(--publication-metas-padding-inline);
-
-    /* Press */
-    --item-press-padding-block-end: var(--publication-press-padding-block-end);
-    --item-press-padding-block-start: var(--publication-press-padding-block-start);
-    --item-press-padding-inline: var(--publication-press-padding-inline);
-    --item-press-order: var(--publication-press-order);
-
-    /* Media */
-    --item-media-color-background: var(--publication-media-color-background);
-    --item-media-order: var(--publication-media-order);
-    --item-media-ratio: var(--publication-media-ratio);
-
-    /* Inner button (--btn-* is the button component's own API) */
-    --btn-border-width: var(--publication-btn-border-width);
-    --btn-color-background: var(--publication-btn-color-background);
-    --btn-color-text: var(--publication-btn-color-text);
-    --btn-color-text-decoration: var(--publication-btn-text-decoration);
-    --btn-color-text-decoration-hover: var(--publication-btn-text-decoration-hover);
-    --btn-padding-inline: var(--publication-btn-padding);
-    --btn-padding-block: var(--publication-btn-padding);
 
     .press {
       margin-block: 0;
-      order: var(--item-press-order);
-      padding-block-end: var(--item-press-padding-block-end);
-      padding-block-start: var(--item-press-padding-block-start);
-      padding-inline: var(--item-press-padding-inline);
+      order: var(--publication-press-order);
+      padding-block-end: var(--publication-press-padding-block-end);
+      padding-block-start: var(--publication-press-padding-block-start);
+      padding-inline: var(--publication-press-padding-inline);
     }
 
     &:has(.media) {
@@ -82,6 +29,10 @@
       .press + .metas {
         padding-block-start: calc(var(--item-metas-padding-block-start) / 2);
       }
+    }
+
+    .concerned {
+      font-size: var(--publication-concerned-font-size);
     }
   }
 }
