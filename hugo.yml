@@ -13,6 +13,8 @@ module:
 
 # Params
 params:
+
+  # Hugolify Admin
   admin:
     collections:
       publications:
@@ -26,14 +28,16 @@ params:
           lucide: newspaper
           material_icons: newspaper
           material_symbols: newspaper
-          sveltiacms: newspaper # legacy
         summary: "{{title}} - {{date | date('YYYY-MM-DD')}}"
+  
+  # Image
   publications:
     thumbnail:
       desktop: '306x459'
       desktop_large: '636x1071'
       mobile: '138x207'
       scrollsnap: '240x360'
+      sizes: 100vw, 50vw, 30vw
     image:
       desktop: '746x'
 

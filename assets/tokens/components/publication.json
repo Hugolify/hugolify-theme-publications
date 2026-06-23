@@ -1,0 +1,32 @@
+{
+  "publication": {
+    "concerned": {
+      "font-size": {
+        "$value": "{fontSize.xs}",
+        "$type": "dimension"
+      }
+    },
+    "press": {
+      "order": {
+        "$value": -1,
+        "$type": "number"
+      },
+      "padding": {
+        "inline": {
+          "$value": "{spacing.card}",
+          "$type": "dimension"
+        },
+        "block": {
+          "start": {
+            "$value": "{spacing.card}",
+            "$type": "dimension"
+          },
+          "end": {
+            "$value": "0",
+            "$type": "dimension"
+          }
+        }
+      }
+    }
+  }
+}

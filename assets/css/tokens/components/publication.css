@@ -1,0 +1,12 @@
+/* Do not edit directly, this file was auto-generated. */
+
+/* publication.css */
+@layer tokens {
+  :root {
+    --publication-concerned-font-size: var(--font-size-xs);
+    --publication-press-order: -1;
+    --publication-press-padding-inline: var(--spacing-card);
+    --publication-press-padding-block-start: var(--spacing-card);
+    --publication-press-padding-block-end: 0;
+  }
+}

@@ -1,0 +1,17 @@
+/* css/modules/publications.css — hugolify-theme-publications entry point */
+
+/* Tokens */
+@import '../tokens/publications.css';
+
+/* Components */
+@import '../components/publication.css';
+@import '../components/publications.css';
+
+/* Pages */
+@import '../pages/publication.css';
+@import '../pages/publications.css';
+
+/* Modules / Taxonomies */
+@import 'publications-categories.css';
+@import 'publications-expertises.css';
+@import 'publications-persons.css';

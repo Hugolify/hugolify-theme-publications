@@ -1,7 +1,7 @@
 {{ with .Params.press }}
   {{ with .title }}
     <p class="press" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <span itemprop="name">{{ . }}</span>
+      <span class="badge" itemprop="name">{{ partial "func/PrepareHTML.html" . }}</span>
     </p>
   {{ end }}
 {{ end }}

@@ -5,12 +5,6 @@
   {{ if templates.Exists ( printf "partials/%s" $publications_persons ) }}
     {{ partial $publications_persons . }}
   {{ end }}
-  <!-- LEGACY -->
-  {{ $publications_concerned := "publications/publications_concerned.html" }}
-  {{ if templates.Exists ( printf "partials/%s" $publications_concerned ) }}
-    {{ partial $publications_concerned . }}
-  {{ end }}
-  <!-- / LEGACY -->
   {{ $publications_expertises := "publications/publications_expertises.html" }}
   {{ if templates.Exists ( printf "partials/%s" $publications_expertises ) }}
     {{ partial $publications_expertises . }}
