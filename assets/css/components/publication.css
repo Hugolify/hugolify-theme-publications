@@ -34,5 +34,9 @@
     .concerned {
       font-size: var(--publication-concerned-font-size);
     }
+
+    .btn {
+      display: none;
+    }
   }
 }
