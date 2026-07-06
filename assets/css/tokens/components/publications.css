@@ -3,7 +3,7 @@
 /* publications.css */
 @layer tokens {
   :root {
-    --publications-min-width: var(--items-min-width);
+    --publications-min-width: 25ch;
     --publications-nav-margin-block-start: var(--items-nav-margin-block-start);
   }
 }

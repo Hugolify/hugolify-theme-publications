@@ -1,7 +1,7 @@
 {
   "publications": {
     "minWidth": {
-      "$value": "{items.minWidth}",
+      "$value": "25ch",
       "$type": "dimension"
     },
     "nav": {
