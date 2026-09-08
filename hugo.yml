@@ -28,6 +28,8 @@ params:
           lucide: newspaper
           material_icons: newspaper
           material_symbols: newspaper
+        path: "{{year}}/{{month}}/{{slug}}"
+        slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
         summary: "{{title}} - {{date | date('YYYY-MM-DD')}}"
   
   # Image
