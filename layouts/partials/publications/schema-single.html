@@ -1,31 +1,44 @@
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Periodical",
-    "name": {{ .Title }},
-    "url": {{ .Permalink }},
+{{- /* Schema.org for a publication: an Article, see func/GetSchemaArticle.html.
 
-    {{ with .Params.image }}
-      "thumbnailUrl": {{ .src | absURL }},
-    {{ end }}
+       A publication is an article that came out in the press: the outlet named
+       under `press` publishes it, and its own URL there is the same work as
+       this page. Without one, the organization behind the site does. Written
+       by its persons, filed under its category, about its expertises — each
+       its own module, read when the site declares it. */ -}}
+{{- $authors := slice -}}
+{{- range partial "func/GetSchemaTerms.html" (dict "page" . "taxonomy" "publications_persons" "format" "page") -}}
+  {{- $authors = $authors | append (partial "func/GetSchemaPerson.html" (dict "page" . "compact" true)) -}}
+{{- end -}}
 
-    {{ with .Date }}
-      "datePublished": {{ . }},
-    {{ end }}
+{{- $publisher := false -}}
+{{- $sameAs := false -}}
+{{- with .Params.press -}}
+  {{- with .title -}}
+    {{- $publisher = dict "@type" "Organization" "name" (partial "func/PrepareData.html" .) -}}
+  {{- end -}}
+  {{- with .url -}}
+    {{- if hasPrefix . "http" -}}{{- $sameAs = . -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
 
-    {{ with .Params.press }}
-      "publisher": {
-        "@type": "Organization",
-        "name": {{ .title | plainify | safeHTML }},
-      },
-    {{ end }}
+{{- $article := partial "func/GetSchemaArticle.html" (dict
+  "page" .
+  "author" $authors
+  "publisher" $publisher
+) -}}
+{{- with $sameAs -}}
+  {{- $article = merge $article (dict "sameAs" .) -}}
+{{- end -}}
+{{- with partial "func/GetSchemaTerms.html" (dict "page" . "taxonomy" "publications_categories") -}}
+  {{- $article = merge $article (dict "articleSection" .) -}}
+{{- end -}}
+{{- with partial "func/GetSchemaTerms.html" (dict "page" . "taxonomy" "publications_expertises" "format" "thing") -}}
+  {{- $article = merge $article (dict "about" .) -}}
+{{- end -}}
 
-    {{ with .Params.description }}
-      "abstract": {{ partial "func/PrepareData.html" . }},
-    {{ end }}
+{{- $webpage := partial "func/GetSchemaWebPage.html" (dict
+  "page" .
+  "mainEntity" (dict "@id" (index $article "@id"))
+) -}}
 
-    {{ with .Content }}
-      "description": {{ partial "func/PrepareData.html" . }},
-    {{ end }}
-  }
-</script>
+{{- partial "commons/jsonld.html" (slice $webpage $article) -}}
