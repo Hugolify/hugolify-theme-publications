@@ -29,6 +29,10 @@
 {{- with $sameAs -}}
   {{- $article = merge $article (dict "sameAs" .) -}}
 {{- end -}}
+{{- /* The featured image and those of the page, see func/GetSchemaImages.html. */ -}}
+{{- with partial "func/GetSchemaImages.html" (dict "page" . "images" .Params.images) -}}
+  {{- $article = merge $article (dict "image" .) -}}
+{{- end -}}
 {{- with partial "func/GetSchemaTerms.html" (dict "page" . "taxonomy" "publications_categories") -}}
   {{- $article = merge $article (dict "articleSection" .) -}}
 {{- end -}}
