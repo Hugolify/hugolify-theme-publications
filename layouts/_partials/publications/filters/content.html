@@ -1,14 +1,14 @@
 <div class="content">
   {{ $publications_categories := "publications/filters/publications_categories.html" }}
-  {{ if templates.Exists ( printf "partials/%s" $publications_categories ) }}
+  {{ if templates.Exists ( printf "_partials/%s" $publications_categories ) }}
     {{ partial $publications_categories . }}
   {{ end }}
   {{ $publications_persons := "publications/filters/publications_persons.html" }}
-  {{ if templates.Exists ( printf "partials/%s" $publications_persons ) }}
+  {{ if templates.Exists ( printf "_partials/%s" $publications_persons ) }}
     {{ partial $publications_persons . }}
   {{ end }}
   {{ $publications_expertises := "publications/filters/publications_expertises.html" }}
-  {{ if templates.Exists ( printf "partials/%s" $publications_expertises ) }}
+  {{ if templates.Exists ( printf "_partials/%s" $publications_expertises ) }}
     {{ partial $publications_expertises . }}
   {{ end }}
 </div>

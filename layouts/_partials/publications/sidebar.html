@@ -2,11 +2,11 @@
   {{ partial "publications/press" . }}
   {{ partial "publications/description" . }}
   {{ $publications_persons := "publications/publications_persons.html" }}
-  {{ if templates.Exists ( printf "partials/%s" $publications_persons ) }}
+  {{ if templates.Exists ( printf "_partials/%s" $publications_persons ) }}
     {{ partial $publications_persons . }}
   {{ end }}
   {{ $publications_expertises := "publications/publications_expertises.html" }}
-  {{ if templates.Exists ( printf "partials/%s" $publications_expertises ) }}
+  {{ if templates.Exists ( printf "_partials/%s" $publications_expertises ) }}
     {{ partial $publications_expertises . }}
   {{ end }}
   {{ partial "commons/share" . }}
