@@ -24,6 +24,7 @@ params:
             value: false
         icon:
           bootstrap_icons: newspaper
+          hugeicons: Newspaper
           iconoir: journal
           lucide: newspaper
           material_icons: newspaper
